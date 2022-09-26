@@ -14,6 +14,8 @@ Run below command on the server where Java application is running
 javac -cp .:$JAVA_HOME/lib/tools.jar JDIDebugger.java
 java -cp .:$JAVA_HOME/lib/tools.jar JDIDebugger > calltree.txt
 ```
+In the JDIDebugger, comment out the classfilter if you want all classes to be traced. 
+
 Run the flow on the server that you want to trace and press control-C on the above Java process when flow has completed execution. Put a classname in below command (without .class) that you know gets involved when you run the flow. This is just to get the correct thread from the server trace logs and generate the tree for that thread only.
 
 ```
