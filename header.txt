@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="scroll"><head><style>
+html.scroll {
+        margin: 4px, 4px;
+        padding: 4px;
+        width: 300px;
+        overflow-x: auto;
+        overflow-y: auto;
+        white-space: nowrap;
+    }
+ul, #myUL {
+  list-style-type: none;
+}
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+.caret {
+  cursor: pointer;
+  user-select: none;
+}
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+.caret-down::before {
+  transform: rotate(90deg);
+}
+.nested {
+  display: none;
+}
+.active {
+  display: block;
+}
+</style></head><body><ul id="myUL"><li><span class="caret">Gajanand Call Tree Generator</span><ul class="nested">
